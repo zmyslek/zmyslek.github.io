@@ -1,0 +1,98 @@
+<!--Student monitor page-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio-student monitor</title>
+    <link rel="stylesheet" type="text/css" href="cssfiles/stylemenu.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/styletable.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/styletitles.css">
+    </head>
+
+    <body style="background-image: url(cssfiles/images/stats.jpg);">
+        <div class="menu">
+            <ul>
+              <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+              <li><a href="basicinfo.html">Basic information</a></li>
+              <li><a href="stmon.html" class="active">Study monitor</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+        <main>
+          <div class="title">
+            <fieldset style="background-color: white; border-radius: 10px;">
+              <h1 style="font-weight: bold; opacity:1;">Student monitor/dashboard</h1>
+            </fieldset>
+          </div>
+          <!--Add NBSA boundary-->
+          
+          <table>
+            <tr>
+              <th>Quartile</th>
+              <th>Course</th>
+              <th>Course Code</th>
+              <th>EC</th>
+              <th>Exam</th>
+              <th>Grade</th>
+            </tr>
+
+            <tr>
+              <td class="quartile" rowspan="3">Block 1</td>
+              <td>Program-& Career Orientation</td>
+              <td>CU75001V3</td>
+              <td>2.5</td>
+              <td>Web site</td>
+            </tr>
+            <tr>
+              <td>Computer Science Basics</td>
+              <td>CU75002V2</td>
+              <td>5</td>
+              <td>Written exam</td>
+            </tr>
+            <tr>
+              <td>Programming basics</td>
+              <td>CU75003V1</td>
+              <td>5</td>
+              <td>Written exam</td>
+            </tr>
+
+            <tr>
+              <td class="quartile" rowspan="2">Block 2</td>
+              <td rowspan="2">Object-oriented programming</td>
+              <td rowspan="2">CU75004V1</td>
+              <td rowspan="2">10</td>
+              <td>Group assignment</td>
+            </tr>
+            <tr>
+              <td>Written exam</td>
+            </tr>
+
+            <tr>
+              <td class="quartile" rowspan="3">Block 1&2</td>
+              <td>Frame project 1</td>
+              <td>CU75001V3</td>
+              <td>2.5</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CU75002V2</td>
+              <td>5</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>CU75003V1</td>
+              <td>5</td>
+              <td></td>
+            </tr>
+          </table>
+        </main>
+    </body>
+</html>

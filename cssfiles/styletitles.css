@@ -12,3 +12,6 @@ h1{
   font-family: Arial, Helvetica, sans-serif;
   margin:auto;
 }
+header{
+  width: page;
+}

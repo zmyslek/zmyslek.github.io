@@ -33,25 +33,29 @@ hr{
 h1{
   text-align: center;
   font-size: 70px;
-  font-family: 'Courier New', monospace;
+  font-family: 'Brush Script MT';
+  color: black;
 }
 h2{
   margin-left: 2.5%;
   margin-top: 0.5%;
   font-size: 25px;
+  font-weight: lighter;
   color: #333;
   text-align: center;
-  font-family: 'Brush Script MT', cursive;
+  font-family: 'Courier New', monospace;
 }
 a{
   text-decoration:underline;
   color:#333;
+  font-family: "Consolas";
 }
 p{
   margin-left: 5%;
   margin-top: 0;
   position: relative;
   font-size: 18px;
+  font-family: "Consolas";
 }
 li{
   margin-left: 3.5%;

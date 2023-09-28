@@ -5,13 +5,8 @@ fieldset{
   margin-left: auto;
   margin-right: auto;
 }
-h1{
-  color: black;
-  text-align: center;
-  font-size: 80px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin:auto;
-}
 header{
   width: page;
+  margin-top: 45%;
+  margin-bottom: 45%;
 }

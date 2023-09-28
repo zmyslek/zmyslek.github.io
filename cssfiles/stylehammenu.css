@@ -3,8 +3,7 @@
     display: none;
   }
 .icon:hover .hammenu{
-    /*display: flex; 
-    justify-content: flex-end;*/
+    display: block;
     background-color: #333;
     top: 5%;
     width: 30%;

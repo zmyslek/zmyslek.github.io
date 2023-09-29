@@ -2,10 +2,8 @@ p{
     font-weight: normal;
     font-style: italic;
 }
-.question p{
-    font-weight: bold;
-    font-style: normal;
-    text-align: center;
+h2{
+    font-size: 20px;
 }
 li{
     font-style: italic;

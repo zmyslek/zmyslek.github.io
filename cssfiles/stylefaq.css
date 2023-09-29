@@ -8,3 +8,6 @@ h2{
 li{
     font-style: italic;
 }
+.menu li{
+    font-style: normal;
+}

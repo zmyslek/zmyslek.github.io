@@ -1,6 +1,3 @@
-.cont{
-    display: none;
-}
-.show:hover .cont{
-    display: block;
+div{
+    margin:0;
 }

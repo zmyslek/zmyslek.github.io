@@ -1,11 +1,12 @@
-div{
-    margin:0;
+p{
+    font-weight: normal;
+    font-style: italic;
 }
-ol{
-    margin: 0;
-    left: 0;
+.question p{
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
 }
 li{
-    margin: 0;
-    left: 0;
+    font-style: italic;
 }

@@ -11,8 +11,9 @@
     float: right;
 }
 .icon:hover .hammenu ul{
+    list-style-type: circle;
     padding: 0;
-    overflow: hidden;
+    overflow: visible;
     background-color: #333;
 }
 .icon:hover .hammenu li{

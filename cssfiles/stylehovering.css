@@ -4,3 +4,6 @@
 .show:hover .cont{
     display: block;
 }
+.show:hover .cont ul{
+  list-style-type: circle;
+}

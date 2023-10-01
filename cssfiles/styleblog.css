@@ -7,12 +7,12 @@ date{
 article{
     margin-left: 5%;
     width: 70%;
+    font-family: "Consolas";
 }
-article, p{
+p{
     margin-left: 2%;
-    font-size: 18px;
 }
-.fieldset{
+.post{
     width: 70%;
     margin-left: 5%;
     margin-right: 20%;

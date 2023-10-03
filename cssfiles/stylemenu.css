@@ -17,6 +17,9 @@
   overflow: hidden;
   background-color: #333;
 }
+.menu i{
+  font-size: 17px;
+}
 .menu li{
   margin: 0;
   float: left;

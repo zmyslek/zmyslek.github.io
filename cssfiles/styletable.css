@@ -1,15 +1,94 @@
 /*Style sheet for tables, especially student monitor/dashboard*/
 table{
-  border:1px solid #333;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
-th{
+th, td{
   border:1px solid #333;
+  font-size: 15px;
+  margin: 0;
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+th{ 
+  border:1.5px solid #333;
+  font-weight: bold;
   background-color: #b1efff;
 }
 .quartile{
   background-color: #b1efff;
-  border:1px solid #333;
+  border:1.5px solid #333;
+}
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  block-size: 50px;
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 5%;
+}
+progress::-webkit-progress-bar {
+  position: relative;
+  background-color: #b1efff;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  z-index: 1;
+}
+progress[value]::-webkit-progress-value{
+  color: #b1efff;
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, 0) 33%, 
+	                           rgba(0,0, 0, 0) 66%, transparent 66%),
+	   -webkit-linear-gradient(left, rgb(7, 193, 255), rgb(255, 3, 213));
+
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+span p{
+  color: #333;
+  display: block;
+  position: absolute;
+  margin-left: 11%;
+  margin-top: 1.25%;
+  z-index: 2;
+}
+.nbsa .fa{
+  padding-left: 2.5%;
+  font-size: 30px; 
+  color:  rgb(7, 193, 255);
+  position: sticky;
+  margin-top: 23px;
+}
+.show .fa{
+  padding-left: 73.25%; 
+  font-size: 30px; 
+  color:  rgb(255, 3, 213);
+  margin-bottom: -45px;
+}
+.liner{
+  width: 100%;
+  display: inline-flex;
+}
+.nbsa{
+  width: 75%;
+  padding-left: 12.5%;
+  padding-right: auto;
+}
+.show p{
+  padding: 0;
+  margin: 0;
+}
+.show, .show:hover {
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  margin-top: -30px;
+  margin-bottom: -55px;
+  padding-bottom: 0;
+}
+.show:hover .cont{
+  margin-bottom: -45px;
 }

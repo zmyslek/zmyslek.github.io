@@ -24,26 +24,31 @@
           <li><a href="stmon.html">Study monitor</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="blog.html">Blog</a></li>
+          <li><a href="safari.html">Safari</a></li>
           <div class="icon" id="icon" style="padding: 0; top: 0;">
-            <li style="float: right;"><a><i class="fa fa-bars"></i></a></li>
+            <li style="float: right; text-align: right;"><a href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
             <!--Hamburger menu-->
-            <div class="hammenu" id="hammenu" style="float:right">
-              <ul>
-                <li><a href="basicinfo.html#person">Personal</a></li>
-                <li><a href="#previous_edu">Education</a></li>
-                <li><a href="#study">Why am I here?</a></li>
-                <li><a href="#itach">IT achivements</a></li>
-                <li><a href="#ach">Other achivements</a></li>
-                <li><a href="#int">Free Time</a></li>
-                <li><a href="#get">Get to know me better!</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
+            <div class="hammenu" id="hammenu">
+              <div class="row">
+                <div class="column" id="column1">
+                  <p><a href="basicinfo.html#person">Personal</a><br></p>
+                  <p><a href="#previous_edu">Education</a><br></p>
+                  <p><a href="#study">Why am I here?</a><br></p>
+                  <p><a href="#itach">IT achivements</a><br></p>
+                </div>
+                <div class="column" style="float: right;">
+                  <p><a href="#ach">Other achivements</a><br></p>
+                  <p><a href="#int">Free Time</a><br></p>
+                  <p><a href="#get">Get to know me better!</a><br></p>
+                  <p><a href="#contact">Contact</a><br></p>
+                </div>
+              </div>
             </div>
           </div>
         </ul>
     </div>
     
-    <header style="background-image: url(/cssfiles/images/basic.png);">
+    <header style="background-image: url(/cssfiles/images/basic.png); z-index: 1;">
       <fieldset style="background-color: white; border-radius: 10px;">
         <h1 style="font-weight: bold; opacity:1;">Basic information about me</h1>
       </fieldset>
@@ -205,6 +210,7 @@
           </div>
         </div>
       </div>
+      <script src="menu.js"></script>
     </main>
   </body>
   </html>

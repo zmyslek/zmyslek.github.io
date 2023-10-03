@@ -50,7 +50,7 @@ a{
   color:#333;
   font-family: "Consolas";
 }
-p{
+p, td, th{
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 0;

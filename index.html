@@ -9,6 +9,7 @@
     <meta name="description" content="Portfolio page of the first year student- Zuzanna Mysłek. It is based on the listed assignment specifications. The project is still under development.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="cssfiles/stylemenu.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/stylehammenu.css">
     <link rel="stylesheet" type="text/css" href="cssfiles/style.css">
     <link rel="stylesheet" type="text/css" href="cssfiles/styleindex.css">
     <link rel="stylesheet" type="text/css" href="cssfiles/styletitles.css">
@@ -28,18 +29,15 @@
           <li><a href="stmon.html">Study monitor</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <div class="show" style="padding: 0; top: 0;">
-            <li style="float: right;"><a>Additional links relevant to ICT</a></li>
-            <div class="cont" style="float: right; width: 30%; margin-right: 5px; top: 0;">
-              <ul>
-                <li><a href="https://hz.nl/en/about-hz/organisation/regulations-and-documents#panel1945070https://hz.nl/" target="_blank" rel="noopener noreferrer">The HZ HBO-ICT Course and Examination Regulations (CER)</a></li>
-                <li><a href="" target="_blank" rel="noopener noreferrer">The Implementation Regulations (IR) of the HBO-ICT program</a></li>
-                <li><a href="https://learn.hz.nl/"  target="_blank" rel="noopener noreferrer">Learn environment</a></li>
-                <li><a href="https://teams.microsoft.com/l/team/19%3a827654897ab746089c081f24aff1c984%40thread.skype/conversations?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c"  target="_blank" rel="noopener noreferrer">The Teams environment of the study program</a></li>
-                <li><a href="https://hz.osiris-student.nl/" target="_blank" rel="noopener noreferrer">MyHZ with my study progress</a></li>
-                <li><a href="https://github.com/HZ-HBO-ICT"  target="_blank" rel="noopener noreferrer">The Github environment of the study program</a></li>
-              </ul>
-            </div>
+          <li><a href="safari.html">Safari</a></li>
+          <li style="float: right;"><a href="javascript:void(0);" onclick="myFunction()">Additional links relevant to ICT</a></li>
+          <div class="hammenu" id="hammenu">
+              <p><a href="https://hz.nl/en/about-hz/organisation/regulations-and-documents#panel1945070https://hz.nl/" target="_blank" rel="noopener noreferrer">The HZ HBO-ICT Course and Examination Regulations (CER)</a></p>
+              <p><a href="" target="_blank" rel="noopener noreferrer">The Implementation Regulations (IR) of the HBO-ICT program</a></p>
+              <p><a href="https://learn.hz.nl/"  target="_blank" rel="noopener noreferrer">Learn environment</a></p>
+              <p><a href="https://teams.microsoft.com/l/team/19%3a827654897ab746089c081f24aff1c984%40thread.skype/conversations?groupId=337e8cca-f67d-4132-9fa9-b0c761bbeb94&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c"  target="_blank" rel="noopener noreferrer">The Teams environment of the study program</a></p>
+              <p><a href="https://hz.osiris-student.nl/" target="_blank" rel="noopener noreferrer">MyHZ with my study progress</a></p>
+              <p><a href="https://github.com/HZ-HBO-ICT"  target="_blank" rel="noopener noreferrer">The Github environment of the study program</a></p>
           </div>
       </ul>
     </div>
@@ -112,6 +110,21 @@
           </div>
         </div>
       </div>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("hammenu");
+          let adviceClass = "newhammenu";
+
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } 
+          else {
+            x.style.display = "block";
+            x.classList.add(adviceClass);
+          }
+        }
+      </script>
     </main>
   </body>
 </html>

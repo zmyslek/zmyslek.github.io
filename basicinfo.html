@@ -210,7 +210,20 @@
           </div>
         </div>
       </div>
-      <script src="menu.js"></script>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("hammenu");
+          let adviceClass = "newhammenu";
+
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } 
+          else {
+            x.style.display = "block";
+            x.classList.add(adviceClass);
+          }
+        }
+      </script>
     </main>
   </body>
   </html>

@@ -1,0 +1,32 @@
+/* Style sheet for the future career page*/
+h2 a{
+  text-decoration: none;
+  font-weight: normal;
+}
+table{
+  width: 90%;
+}
+#category{
+  width: 20%;
+}
+#firm{
+  width: 30%;
+}
+table i{
+  color: #333;
+}
+#riseapps{
+  background-color: #b1efff;
+}
+h1 a{
+  text-decoration: none;
+}
+p{
+  margin-bottom: 5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.newhammenu{
+  width: 12%;
+}

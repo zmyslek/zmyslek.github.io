@@ -6,6 +6,9 @@ body{
   opacity: 1;
   top: 0;
 }
+i{
+  color: white;
+}
 html{
   scroll-padding-top: 50px;
 }
@@ -29,10 +32,11 @@ hr{
   border: none;
   margin-top:none;
 }
-h1{
+h1, h1 a{
   text-align: center;
-  font-size: 70px;
-  font-family: 'Brush Script MT';
+  font-size: 80px;
+  font-weight: 900;
+  font-family: "Bradley Hand ITC", sans-serif;
   color: black;
 }
 h2{
@@ -76,4 +80,7 @@ button{
 }
 .contact a{
   font-weight: bold;
+}
+fieldset{
+  border-radius: 3px;
 }

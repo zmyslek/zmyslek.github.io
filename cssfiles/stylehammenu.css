@@ -1,51 +1,51 @@
-/*Sytle sheet for creation of humburger menu in basic information section*/
+/*Sytle sheet for creation of humburger menu*/
 .hammenu{
     display: none;
 }
   
 .newhammenu{
-    margin-top: 1.25%;
-    padding-top: 0;
-    display: block;
-    position: fixed;
-    float: right;
-    width: 40%;
-    height: auto;
-    float: right;
-    margin-right:0;
-    margin-left: auto;
-    right: 0;
-    left: auto;
-    top: 5%;
-    z-index: 4;
-    overflow: visible;
-    background-color: #333;
+  margin-top: 1.25%;
+  padding-top: 0;
+  display: block;
+  position: fixed;
+  float: right;
+  width: 40%;
+  height: auto;
+  float: right;
+  margin-right:0;
+  margin-left: auto;
+  right: 0;
+  left: auto;
+  top: 5%;
+  z-index: 4;
+  overflow: visible;
+  background-color: #333;
 }
 .newhammenu a{
-    float: right;
-    color: white;
-    overflow: visible;
-    text-decoration: none;
-    padding: 14px 16px;
+  float: right;
+  color: white;
+  overflow: visible;
+  text-decoration: none;
+  padding: 14px 16px;
 }
 .newhammenu p{
-    text-align: right;
-    left: 0;
-    right: 0;
-    padding: 0;
+  text-align: right;
+  left: 0;
+  right: 0;
+  padding: 0;
 }
 .newhammenu .column{
-    padding-top: 0;
-    margin-top: 0;
-    width: 45%;
+  padding-top: 0;
+  margin-top: 0;
+  width: 45%;
 }
 .newhammenu a:hover{
-    background-color: #b1efff;
-    color: #333;
+  background-color: #b1efff;
+  color: #333;
 }
 .newhammenu #column1{
-    float: left;
+  float: left;
 }
 .newhammenu #column1 p, a{
-    text-align: right;
+  text-align: right;
 }

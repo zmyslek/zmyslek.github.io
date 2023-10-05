@@ -1,0 +1,149 @@
+<!--Student monitor page-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio-future career</title>
+    <link rel="stylesheet" type="text/css" href="cssfiles/stylemenu.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/stylehammenu.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/styletitles.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/stylecolumns.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/styletable.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/stylesafari.css">
+  </head>
+
+  <body style="background-image: url(cssfiles/images/safari.jpg);">
+    <div class="menu">
+        <ul>
+          <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+          <li><a href="basicinfo.html">Basic information</a></li>
+          <li><a href="stmon.html">Study monitor</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="safari.html" class="active">Future career</a></li>
+          <li style="float: right; text-align: right;"><a href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+          <div class="hammenu" id="hammenu">
+            <p><a href="deveji.html">DEVEJI</a></p>
+            <p><a href="riseapps.html">RISEAPPS</a></p>
+            <p><a href="exis.html" class="active">EXIS</a></p>
+          </div>
+        </ul>
+    </div>
+
+    <header style="background-image: url(cssfiles/images/safari.jpg);">
+      <fieldset style="background-color: white; border-radius: 10px;">
+        <h1 style="font-weight: bold; opacity:1;"><a href="https://exis.com.gr/">EXIS</a></h1>
+      </fieldset>
+    </header>
+    <main>
+      <div class="row">
+        <div class="column" style="width: 65%;">
+          <h2>About company</h2>
+          <p>EXIS is a company founded in 2001 in Greece. With over two decades of experience, EXIS has established itself as a dynamic and innovative force in the fields of Software, IT Consulting, and Web Development. The company has built a strong reputation for delivering cutting-edge solutions and tailored services that cater to the unique needs of its clients.</p>
+          <p>One of EXIS's standout qualities is its unwavering commitment to excellence. Their team of highly skilled professionals brings a wealth of expertise and knowledge to every project they undertake. They understand that technology is ever-evolving, and they continuously adapt to the latest industry trends and best practices to ensure that their clients remain at the forefront of innovation.</p>
+          <p>EXIS has earned the trust of a wide and diverse spectrum of companies across various industries. From small startups seeking to make their mark in the digital world to established enterprises looking to enhance their online presence and streamline their operations, EXIS has successfully partnered with clients of all sizes and backgrounds.</p>
+        </div>
+        <div class="column" style="width: 35%;">
+          <table>
+            <tr>
+              <td class="quartile">Location</td>
+              <td>Greece</td>
+            </tr>
+
+            <tr>
+              <td class="quartile">Founding date</td>
+              <td>2023</td>
+            </tr>
+
+            <tr>
+              <td class="quartile">Type of projects</td>
+              <td>Business performance enchanced with software engineering</td>
+            </tr>
+              <tr>
+                <td class="quartile" rowspan="11">IT Technology used</td>
+                <td>.NET/C#</td>
+              </tr>
+              <tr>
+                <td>WordPress/WooCommerce</td>
+              </tr>
+              <tr>
+                <td>Power BI</td>
+              </tr>
+              <tr>
+                <td>ASP.net/MVC</td>
+              </tr>
+              <tr>
+                <td>Swift/Objective-C</td>
+              </tr>
+              <tr>
+                <td>Oracle RDBMS, SQL Server, MySQL</td>
+              </tr>
+              <tr>
+                <td>Oracle Application Server, Forms & Reports</td>
+              </tr>
+              <tr>
+                <td>Android Studio</td>
+              </tr>
+              <tr>
+                <td>PHP/Laravel</td>
+              </tr>
+              <tr>
+                <td>React Native</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+              </tr>
+            <tr>
+              <td class="quartile">Staff numbers</td>
+              <td>Small business</td>
+            </tr>
+            <tr>
+              <td class="quartile">Company culture</td>
+              <td>Casual</td>
+            </tr>
+            <tr>
+              <td class="quartile">If international</td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+              <td class="quartile">Job description</td>
+              <td>Software engineer</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="motivation">
+        <h2>My reasons to chose this firm</h2>
+        <p>From the information gathered Exis is a small bussiness, which is my prefered type.</p>
+        <p>This company is mostly focused on software development, which is what picks my interested. Exis develops in many fields which would give me an opportunity to grow in many fields as well as gain more knowledge. </p>
+        <p>I am really found of Meditarean area, so Greece would be an amazing place to live and work in as well.</p>
+      </div>
+
+      <div class="sources">
+        <h2>Sources</h2>
+        <ul>
+          <li><a href="https://exis.com.gr/who-we-are/">Exis page</a></li>
+        </ul>
+      </div>
+    </main>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("hammenu");
+        let adviceClass = "newhammenu";
+
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } 
+        else {
+          x.style.display = "block";
+          x.classList.add(adviceClass);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,20 +1,26 @@
+/*Style sheet for the blog page*/
 date{
-    text-align: right;
-    float: right;
-    font-style: italic;
-    margin-right: 2%;
+  text-align: right;
+  float: right;
+  font-style: italic;
+  margin-right: 2%;
 }
 article{
-    margin-left: 5%;
-    width: 70%;
-    font-family: "Consolas";
+  margin-left: 5%;
+  padding-right: 10%;
+  width: 80%;
+  font-family: "Consolas";
 }
 p{
-    margin-left: 2%;
+  margin-left: 2%;
 }
 .post{
-    width: 70%;
-    margin-left: 5%;
-    margin-right: 20%;
-    background-color: #b1efff;
+  width: 70%;
+  margin-left: 5%;
+  margin-right: 20%;
+  background-color: #b1efff;
+}
+fieldset{
+  padding-top: 2.5%;
+  padding-bottom: 3%;
 }

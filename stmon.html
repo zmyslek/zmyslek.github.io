@@ -1,164 +1,191 @@
 <!--Student monitor page-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Portfolio-student monitor</title>
-      <link rel="stylesheet" type="text/css" href="cssfiles/stylemenu.css">
-      <link rel="stylesheet" type="text/css" href="cssfiles/style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="cssfiles/styletitles.css">
-      <link rel="stylesheet" type="text/css" href="cssfiles/stylehovering.css">
-      <link rel="stylesheet" type="text/css" href="cssfiles/styletable.css">
-      <link rel="stylesheet" type="text/css" href="cssfiles/stylecolumns.css">
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <body style="background-image: url(cssfiles/images/stats.jpg);">
-        <div class="menu">
-            <ul>
-              <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-              <li><a href="basicinfo.html">Basic information</a></li>
-              <li><a href="stmon.html" class="active">Study monitor</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="safari.html">Future career</a></li>
-            </ul>
+    <title>Portfolio-student monitor</title>
+    
+    <link rel="stylesheet" type="text/css" href="cssfiles/stylemenu.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/styletitles.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/stylehovering.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/styletable.css">
+    <link rel="stylesheet" type="text/css" href="cssfiles/stylecolumns.css">
+  </head>
+
+  <body style="background-image: url('cssfiles/images/stats.jpg');">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+        <li><a href="basicinfo.html">Basic information</a></li>
+        <li><a href="stmon.html" class="active">Study monitor</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="safari.html">Future career</a></li>
+      </ul>
+    </div>
+
+    <img id="myImg" src="cssfiles/images/stats.jpg">
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    <header>
+      <fieldset style="background-color: white; border-radius: 10px;">
+        <h1>Student monitor/dashboard</h1>
+      </fieldset>
+    </header>
+
+    <main>
+      <div class="row">
+        <div class="column" style="width: 80%;">
+          <div class="nbsa">
+            <h2>NBSA<br></h2>
+            <div class="show">
+              <div class="cont">
+                <br>
+                <article class="liner">
+                  <p style="color: #333; width: 50%">2.5EC's</p><p style="width: 50%; padding-left: 25%">NBSA boundry (45EC's)</p>
+                </article>
+                <br>
+                <br>
+              </div>
+                <p style="margin-bottom: 0; margin-top: 0; padding-bottom: 0; padding-top:0"><i style="margin-left: perc;" class="fa fa-check" id="ok"></i></p>
+            </div>
+              <i class="fa fa-check" id="show"></i>
+            <progress id="label" value="2.5" max= "60"></progress>
+          </div>
         </div>
-
-        <header style="background-image: url(cssfiles/images/stats.jpg);">
-          <fieldset style="background-color: white; border-radius: 10px;">
-            <h1 style="font-weight: bold; opacity:1;">Student monitor/dashboard</h1>
-          </fieldset>
-        </header>
-
-        <main>
-          <div class="row">
-            <div class="column" style="width: 80%;">
-              <div class="nbsa">
-                <h2>NBSA<br></h2>
-                <div class="show">
-                  <div class="cont">
-                    <br>
-                    <article class="liner">
-                      <p style="color: #333; width: 50%">2.5EC's</p><p style="width: 50%; padding-left: 25%">NBSA boundry (45EC's)</p>
-                    </article>
-                    <br>
-                    <br>
-                  </div>
-                    <p style="margin-bottom: 0; margin-top: 0; padding-bottom: 0; padding-top:0"><i style="margin-left: perc;" class="fa fa-check" id="ok"></i></p>
-                </div>
-                  <i class="fa fa-check" id="show"></i>
-                <progress id="label" value="2.5" max= "60"></progress>
-              </div>
-            </div>
-            <div class="column" style="width: 20%; float: right;">
-              <div>
-                <img src="cssfiles/images/hz-logo.jpg" alt="hz logo" style="width: 100%; padding-right: 10%;">
-              </div>
-            </div>
-          </div>
-          
+        <div class="column" style="width: 20%; float: right;">
           <div>
-            <h2>Student monitor</h2>
-            <table>
-              <tr>
-                <th>Quartile</th>
-                <th>Course</th>
-                <th>Course Code</th>
-                <th>EC</th>
-                <th>Exam</th>
-                <th>Grade</th>
-              </tr>
-
-              <tr>
-                <td class="quartile" rowspan="3">Quartile 1</td>
-                <td>Program-& Career Orientation</td>
-                <td>CU75001V3</td>
-                <td>2.5</td>
-                <td>Web site</td>
-              </tr>
-              <tr>
-                <td>Computer Science Basics</td>
-                <td>CU75002V2</td>
-                <td>5</td>
-                <td>Written exam</td>
-              </tr>
-              <tr>
-                <td>Programming basics</td>
-                <td>CU75003V1</td>
-                <td>5</td>
-                <td>Case Study</td>
-              </tr>
-
-              <tr>
-                <td class="quartile" rowspan="5">Quartile 2</td>
-                <td rowspan="2">Object-oriented programming</td>
-                <td rowspan="2">CU75004V1</td>
-                <td rowspan="2">10</td>
-                <td>Case Study</td>
-              </tr>
-              <tr>
-                <td>Project</td>
-              </tr>
-              <tr>
-                <td rowspan="3">Framework Project 1</td>
-                <td rowspan="3">CU75080V1</td>
-                <td rowspan="3">10</td>
-                <td>Project</td>
-              </tr>
-              <tr>
-                <td>Assesment</td>
-              </tr>
-              <tr>
-                <td>Report</td>
-              </tr>
-
-              <tr>
-                <td rowspan="3" class="quartile">Quartile 3</td>
-                <td rowspan="3">Frame project 2</td>
-                <td rowspan="3">CU75011V3</td>
-                <td rowspan="3">10</td>
-                <td>Portfolio</td>
-              </tr>
-              <tr>
-                <td>Project</td>
-              </tr>
-              <tr>
-                <td>Assesment</td>
-              </tr>
-
-              <tr>
-                <td rowspan="4" class="quartile">Quartile 4</td>
-                <td rowspan="3">Framework Project 2</td>
-                <td rowspan="3">CU75011V3</td>
-                <td rowspan="3">10</td>
-                <td>Portfolio</td>
-              </tr>
-              <tr>
-                <td>Project</td>
-              </tr>
-              <tr>
-                <td>Assesment</td>
-              </tr>
-
-              <tr>
-                <td>Bussiness IT Consultancy Basics</td>
-                <td>CU75081V1</td>
-                <td>2.5</td>
-                <td>Case study</td>
-              </tr>
-
-              <tr>
-                <td class="quartile"> Whole Year</td>
-                <td>Personal Professional Development</td>
-                <td>CU75068V3</td>
-                <td>12.5</td>
-                <td>Portfolio</td>
-              </tr>
-            </table>
+            <img src="cssfiles/images/hz-logo.jpg" alt="hz logo" style="width: 100%; padding-right: 10%;">
           </div>
-        </main>
-    </body>
+        </div>
+      </div>
+      
+      <div>
+        <h2>Student monitor</h2>
+        <table>
+          <tr>
+            <th>Quartile</th>
+            <th>Course</th>
+            <th>Course Code</th>
+            <th>EC</th>
+            <th>Exam</th>
+            <th>Grade</th>
+          </tr>
+
+          <tr>
+            <td class="quartile" rowspan="3">Quartile 1</td>
+            <td>Program-& Career Orientation</td>
+            <td>CU75001V3</td>
+            <td>2.5</td>
+            <td>Web site</td>
+          </tr>
+          <tr>
+            <td>Computer Science Basics</td>
+            <td>CU75002V2</td>
+            <td>5</td>
+            <td>Written exam</td>
+          </tr>
+          <tr>
+            <td>Programming basics</td>
+            <td>CU75003V1</td>
+            <td>5</td>
+            <td>Case Study</td>
+          </tr>
+
+          <tr>
+            <td class="quartile" rowspan="5">Quartile 2</td>
+            <td rowspan="2">Object-oriented programming</td>
+            <td rowspan="2">CU75004V1</td>
+            <td rowspan="2">10</td>
+            <td>Case Study</td>
+          </tr>
+          <tr>
+            <td>Project</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Framework Project 1</td>
+            <td rowspan="3">CU75080V1</td>
+            <td rowspan="3">10</td>
+            <td>Project</td>
+          </tr>
+          <tr>
+            <td>Assesment</td>
+          </tr>
+          <tr>
+            <td>Report</td>
+          </tr>
+
+          <tr>
+            <td rowspan="3" class="quartile">Quartile 3</td>
+            <td rowspan="3">Frame project 2</td>
+            <td rowspan="3">CU75011V3</td>
+            <td rowspan="3">10</td>
+            <td>Portfolio</td>
+          </tr>
+          <tr>
+            <td>Project</td>
+          </tr>
+          <tr>
+            <td>Assesment</td>
+          </tr>
+
+          <tr>
+            <td rowspan="4" class="quartile">Quartile 4</td>
+            <td rowspan="3">Framework Project 2</td>
+            <td rowspan="3">CU75011V3</td>
+            <td rowspan="3">10</td>
+            <td>Portfolio</td>
+          </tr>
+          <tr>
+            <td>Project</td>
+          </tr>
+          <tr>
+            <td>Assesment</td>
+          </tr>
+
+          <tr>
+            <td>Bussiness IT Consultancy Basics</td>
+            <td>CU75081V1</td>
+            <td>2.5</td>
+            <td>Case study</td>
+          </tr>
+
+          <tr>
+            <td class="quartile"> Whole Year</td>
+            <td>Personal Professional Development</td>
+            <td>CU75068V3</td>
+            <td>12.5</td>
+            <td>Portfolio</td>
+          </tr>
+        </table>
+      </div>
+      <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() { 
+        modal.style.display = "none";
+        }
+    </script>
+    </main>
+  </body>
 </html>

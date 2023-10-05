@@ -20,7 +20,20 @@ p{
   margin-right: 20%;
   background-color: #b1efff;
 }
-fieldset{
+section fieldset{
   padding-top: 2.5%;
   padding-bottom: 3%;
+  opacity: 1;
+}
+.button{
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.button a{
+  text-decoration: none;
+}
+#article1, #article2, #article3, #article4, #article5, #article6, #article7, #article8{
+  display: none;
 }

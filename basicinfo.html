@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Portfolio-about me</title>
+    
     <link rel="stylesheet" type="text/css" href="cssfiles/style.css">
     <link rel="stylesheet" type="text/css" href="cssfiles/stylemenu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="cssfiles/stylecolumns.css">
   </head>
 
-  <body style="background-image: url(cssfiles/images/basic.png);">
+  <body style="background-image: url('cssfiles/images/basic.png')">
     <div class="menu">
         <ul>
           <li><a href="index.html"><i class="fa fa-home"></i></a></li>
@@ -48,10 +50,18 @@
           </div>
         </ul>
     </div>
-    
-    <header style="background-image: url(/cssfiles/images/basic.png); z-index: 1;">
+
+    <img id="myImg" src="cssfiles/images/basic.png">
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <header>
+
       <fieldset style="background-color: white; border-radius: 10px;">
-        <h1 style="font-weight: bold; opacity:1;">Basic information about me</h1>
+        <h1>Basic information about me</h1>
       </fieldset>
     </header>
 
@@ -206,6 +216,23 @@
             x.style.display = "block";
             x.classList.add(adviceClass);
           }
+        }
+        
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() { 
+        modal.style.display = "none";
         }
       </script>
     </main>

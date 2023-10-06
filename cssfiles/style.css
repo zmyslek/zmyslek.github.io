@@ -34,6 +34,9 @@ main{
   z-index: 1;
   opacity: 1;
 }
+main div, section, a{
+  z-index: 1;
+}
 section{
   margin-top: 2%;
 }

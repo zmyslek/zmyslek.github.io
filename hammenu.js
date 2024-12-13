@@ -1,27 +1,61 @@
-function myFunction() {
-  var x = document.getElementById("hammenu");
-  let adviceClass = "newhammenu";
+/**
+ * Hamburger Menu and Modal Utility
+ * @param {Object} config - Configuration options for menu and modal
+ */
+function initHamburgerMenu(config = {}) {
+  // Default configuration
+  const defaultConfig = {
+      menuSelector: '.hamburger-menu',
+      modalSelector: '.modal',
+      closeButtonSelector: '.close-modal'
+  };
 
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } 
-  else {
-    x.style.display = "block";
-    x.classList.add(adviceClass);
+  // Merge default with provided configuration
+  const settings = { ...defaultConfig, ...config };
+
+  // Validate required DOM elements
+  const menu = document.querySelector(settings.menuSelector);
+  const modal = document.querySelector(settings.modalSelector);
+  const closeButton = document.querySelector(settings.closeButtonSelector);
+
+  if (!menu || !modal || !closeButton) {
+      console.error('Required DOM elements are missing');
+      return null;
   }
-}
-// Get the modal
-var modal = document.getElementById('myModal');
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
 
-img.onclick = function(){
-modal.style.display = "block";
-modalImg.src = this.src;
+  // Menu toggle functionality
+  function toggleMenu() {
+      if (!menu) return;
+      menu.classList.toggle('active');
+  }
+
+  // Modal display functionality
+  function openModal() {
+      if (!modal) return;
+      modal.style.display = 'block';
+  }
+
+  function closeModal() {
+      if (!modal) return;
+      modal.style.display = 'none';
+  }
+
+  // Event Listeners
+  menu.addEventListener('click', toggleMenu);
+  closeButton.addEventListener('click', closeModal);
+
+  return {
+      toggleMenu,
+      openModal,
+      closeModal
+  };
 }
 
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() { 
-modal.style.display = "none";
-}
+// Example usage with custom configuration
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerUtility = initHamburgerMenu({
+      menuSelector: '#custom-menu',
+      modalSelector: '#image-modal',
+      closeButtonSelector: '#modal-close-btn'
+  });
+});

@@ -14,34 +14,41 @@
 
 ## 🧪 Test Plan & V-Model Mapping
 
-These user stories are linked to different testing layers of the V-model:
+The following test strategy is based on the V-model software development process.
 
-- **Unit tests** target the *component level*, verifying small isolated functions like toggling or displaying elements.
-- **System tests** correspond to the *system level*, testing full scenarios from a user’s point of view.
+- **Unit Tests** (Component Level): Validate specific functions like `toggleMenu()` and `openModal()`.
+- **System Tests** (System Level): Validate the full user story through interactions and expected outcomes.
 
-Each user story has tests for both expected behavior (happy path) and error handling (unhappy path).
+Each user story includes:
 
-### 🧪 System Tests Overview
+- A *happy path*: normal, expected behavior
+- An *unhappy path*: error or edge case scenario
+
+---
+
+## 🧪 System Tests Overview
 
 | User Story | Scenario         | ✅ Happy Path (Expected Behavior)                       | ❌ Unhappy Path (Error Handling)                       |
 | ---------- | ---------------- | ------------------------------------------------------ | ----------------------------------------------------- |
 | 1          | Toggle menu      | Menu toggles visibility when clicked (`.active` class) | Missing element logs error, function exits gracefully |
 | 2          | Modal open/close | Modal shows/hides via `display: block`/`none`          | Missing modal/button logs error without crashing      |
 
-### 🔬 Unit Tests Overview
+---
 
-#### User Story 1 – Hamburger Menu
+## 🔬 Unit Tests Overview
+
+### 🧩 User Story 1 – Hamburger Menu
 
 - `toggleMenu()` correctly toggles the `.active` class.
 - If the button or menu is missing, it logs an error and skips execution.
 
-#### User Story 2 – Modal Handling
+### 🧩 User Story 2 – Modal Handling
 
 - `openModal()` sets `modal.style.display = 'block'`.
 - `closeModal()` sets `modal.style.display = 'none'`.
 - Missing DOM elements are handled gracefully.
 
-We use lightweight DOM mocks (via `document.createElement`) to simulate the environment without relying on real UI components.
+We use mocked DOM elements (`document.createElement`) to simulate the environment, serving as lightweight *factories* for testing.
 
 ---
 
@@ -50,45 +57,59 @@ We use lightweight DOM mocks (via `document.createElement`) to simulate the envi
 Here’s a screenshot of all tests passing:
 
 ![Test Results](test_results.png)
+![Test Redults in GitHub](image.png)
 
 ---
 
 ## ⚙️ Test Automation with GitHub Actions
 
-Tests are automatically triggered whenever changes are pushed to the repository.  
-The CI pipeline is configured using [GitHub Actions](https://github.com/features/actions). The workflow file is located at:
+Tests are automatically run whenever code is pushed to the GitHub repository.
 
+### 🛠️ Workflow file location:
+./github/workflows/test.yml
 
-This ensures tests are always up to date and run in a clean environment.
+### 💡 Technologies used:
+
+- Node.js
+- Vitest / Jest (for JavaScript unit tests)
+
+You can view the test run results directly on GitHub (see instructions below).
 
 ---
 
 ## 🧠 Evaluation & Reflection
 
-### ✅ What errors can we catch?
+### ✅ What errors can we detect?
 
-- If a DOM element like the modal or menu button is missing, we’ll catch it with a clean console error.
-- JavaScript logic bugs such as class toggling or incorrect display state.
+- Missing elements in the DOM are caught with helpful console errors.
+- Logic bugs like incorrect toggle state or missing display assignment.
 
-### ❌ What we *can’t* catch with current tests:
+### ❌ What we can’t detect (limitations):
 
-- Visual/UI issues (z-index conflicts, animation timing, misplaced buttons)
-- Responsive behavior on different screen sizes
-- Accessibility violations
-
-### 🧾 So… does everything work?
-
-From a logic perspective, yes. The behavior of opening, closing, and toggling works consistently and error handling is in place.
-
-However, since we’re not testing CSS, visuals, or real user interaction flow, we can’t claim full confidence across browsers or devices.
-
-### 🔧 What could be improved?
-
-- Introduce visual regression testing (e.g., Percy or Playwright screenshots)
-- Consider end-to-end testing for full user flow
-- More complex DOM factories for simulating mobile views or large screens
+- Visual/CSS bugs (e.g., display hidden by `z-index`, animations not showing)
+- Screen responsiveness issues
+- Accessibility problems (screen readers, keyboard navigation)
 
 ---
 
-**Conclusion:**  
-The core JavaScript logic is solid and well-tested. There's clear error handling and automated testing in place. Visual and cross-device checks should follow in future iterations.
+### 📈 Is “everything working”?
+
+**✔️ Yes — for logic.**
+- All functions work correctly and errors are handled.
+
+**❗ No — for visuals and UI behavior.**
+- We are not testing CSS, layout, or rendering across devices or browsers.
+
+---
+
+## 🔧 Suggested Improvements
+
+- Add visual regression testing (e.g., Percy, Playwright with screenshot diffs)
+- Write end-to-end tests using tools like Cypress
+- Extend factory mocks to test more responsive states (mobile/desktop)
+
+---
+
+## ✅ Conclusion
+
+The test coverage for JavaScript logic is thorough and automated. There is a clear link to the V-model, and both positive and negative paths are tested. Visual behavior still requires manual or advanced visual testing tools.
